@@ -13,6 +13,7 @@ const NewSkillForm = ({setSkills}) => {
   }
 
   const _handleSubmit = (e) => {
+    // e.preventDefault() method in JavaScript and React is commonly used to prevent the default behavior of an event.when the form is submitted, the handleSubmit function is called, and e.preventDefault() prevents the browser's default page reload behavior, allowing you to handle the form data without leaving the current page. 
     e.preventDefault()
     if (skill)
       //add new skill to skills list ,level:level  can be written in level like that { name: skill, level }
